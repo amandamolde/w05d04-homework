@@ -1,10 +1,21 @@
 // 1. Require your node modules
+const mongoose = require('mongoose');
+const db = mongoose.connection;
 
 // 2. Require your model (and possibly your extra data source);
+const Vampire = require('./models/vampire');
 
 // 3. Connect your database and collection name
+mongoose.connect('mongodb://localhost:27017/article', { useNewUrlParser: true });
 
 // 4. Open your mongoose connection
+db.on('error', (err) => {
+	console.log(err, ' this is the error message');
+});
+
+db.on('connected', () => {
+	console.log('vampire_app is connected to mongodb');
+});
 
 /////////////////////////////////////////////////
 //Write your answers to add, query, update, remove, and Hungry for More below.
