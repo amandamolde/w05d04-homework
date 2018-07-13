@@ -163,6 +163,30 @@ db.on('connected', () => {
 /////////////////////////////////////////////////
 // ### Select with OR
 
+// Vampire.find( { location: { $in: ['New York, New York, US', 'New Orleans, Louisiana, US'] } },
+// 	(err,response) => {
+// 		console.log(response);
+// 	}
+// );
+
+// Vampire.find( { loves: { $in: ['brooding', 'being tragic'] } },
+// 	(err,response) => {
+// 		console.log(response);
+// 	}
+// );
+
+// Vampire.find( { $or: [ { victims: { $gt: 1000 } }, { loves: { $eq: 'marshmallows' } } ] },
+// 	(err,response) => {
+// 		console.log(response);
+// 	}
+// );
+
+// Vampire.find( { $or: [ { hair_color: { $eq: 'red' } }, { eye_color: { $eq: 'green' } } ] },
+// 	(err,response) => {
+// 		console.log(response);
+// 	}
+// );
+
 /////////////////////////////////////////////////
 //### Select objects that match one of several values
 
