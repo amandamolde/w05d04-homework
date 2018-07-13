@@ -190,6 +190,30 @@ db.on('connected', () => {
 /////////////////////////////////////////////////
 //### Select objects that match one of several values
 
+// Vampire.find( { loves: { $in: ['frilly shirtsleeves', 'frilly collars'] } },
+// 	(err,response) => {
+// 		console.log(response);
+// 	}
+// );
+
+// Vampire.find( { loves: { $eq: 'brooding' } },
+// 	(err,response) => {
+// 		console.log(response);
+// 	}
+// );
+
+// Vampire.find( { loves: { $in: ['appearing innocent', 'trickery', 'lurking in rotting mansions', 'R&B music'] } },
+// 	(err,response) => {
+// 		console.log(response);
+// 	}
+// );
+
+// Vampire.find( { loves: { $eq: 'fancy cloaks', $nin: ['top hats', 'virgin blood'] } },
+// 	(err,response) => {
+// 		console.log(response);
+// 	}
+// );
+
 /////////////////////////////////////////////////
 //### Negative Selection
 
