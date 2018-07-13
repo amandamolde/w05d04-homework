@@ -324,6 +324,22 @@ db.on('connected', () => {
 /////////////////////////////////////////////////
 // ## REMOVE
 
+// Vampire.findOneAndDelete(
+// 	{hair_color: 'brown'},
+// 	(err, response) => {
+// 		if (err) {
+// 			console.log(err);
+// 		} else {
+// 			console.log(response);
+// 		}
+// 	});
+
+// Vampire.deleteMany(
+// 	{eye_color: 'blue'},
+// 	(err, response) => {
+// 		console.log(response);
+// 	})
+
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 
