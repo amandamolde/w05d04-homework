@@ -26,10 +26,10 @@ db.on('connected', () => {
 /////////////////////////////////////////////////
 // INSERT USING MONGOOSE
 // ### Add the vampire data that we gave you
-Vampire.collection.insertMany(VampireData,(err, data) => {
-    console.log("added provided vampire data")
-    mongoose.connection.close();
-  });
+// Vampire.collection.insertMany(VampireData,(err, data) => {
+//     console.log("added provided vampire data")
+//     mongoose.connection.close();
+//   });
 
 // ### Add some new vampire data
 
@@ -134,6 +134,31 @@ Vampire.collection.insertMany(VampireData,(err, data) => {
 
 /////////////////////////////////////////////////
 // ### Select by exists or does not exist
+
+// Vampire.find( {title: { $exists: true } },
+// 	(err, response) => {
+// 		console.log(response);
+// 	}
+// );
+
+// Vampire.find( {victims: { $exists: false } },
+// 	(err, response) => {
+// 		console.log(response);
+// 	}
+// );
+
+// Vampire.find( {title: { $exists: true }, victims: { $exists: false } },
+// 	(err, response) => {
+// 		console.log(response);
+// 	}
+// );
+
+// Vampire.find( {victims: { $exists: true, $gt: 1000 } },
+// 	(err, response) => {
+// 		console.log(response);
+// 	}
+// );
+
 
 /////////////////////////////////////////////////
 // ### Select with OR
