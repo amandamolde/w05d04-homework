@@ -242,6 +242,30 @@ db.on('connected', () => {
 /////////////////////////////////////////////////
 // ## REPLACE
 
+// Vampire.replaceOne (
+// 	{name: 'Claudia'},
+// 	{name: 'Eve', portrayed_by: 'Tilda Swinton'},
+// 	(err, response) => {
+// 		if (err) {
+// 			console.log(err);
+// 		} else {
+// 			console.log(response);
+// 		};
+// });
+
+// Vampire.replaceOne(
+// 	{gender: 'm'},
+// 	{name: 'Guy Man', is_actually: 'were-lizard'},
+// 	(err, response) => {
+// 		if(err) {
+// 			console.log(err);
+// 		} else {
+// 			console.log(response);
+// 		}
+// 	}
+// );
+
+
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // ## UPDATE
