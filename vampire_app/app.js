@@ -217,6 +217,27 @@ db.on('connected', () => {
 /////////////////////////////////////////////////
 //### Negative Selection
 
+// Vampire.find( { loves: { $eq: 'ribbons' }, eye_color: { $not: { $eq:'brown'} } },
+// 	(err, response) => {
+// 		console.log(response);
+// 	}
+// );
+
+// Vampire.find( { location: { $not: { $eq:'Rome, Italy'} } } );
+
+// Vampire.find( { loves: { $nin: ['fancy cloaks', 'frilly shirtsleeves', 'appearing innocent', 'being tragic', 'brooding'] } },
+// 	(err,response) => {
+// 		console.log(response);
+// 	}
+// );
+
+// Vampire.find( {victims: { $not: {$gt: 200 } } },
+// 	(err, response) => {
+// 		console.log(response);
+// 	} 
+// );
+
+
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // ## REPLACE
