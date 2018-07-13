@@ -13,3 +13,4 @@ const vampireSchema = new Schema({
 });
 
 const Vampire = mongoose.model('Vampire', vampireSchema);
+module.exports = Vampire;
