@@ -270,6 +270,56 @@ db.on('connected', () => {
 /////////////////////////////////////////////////
 // ## UPDATE
 
+// Vampire.findOneAndUpdate(
+// 	{name: 'Guy Man'},
+// 	{gender: 'f'},
+// 	{new: true},
+// 	(err, vampire) => {
+// 		console.log(vampire);
+// });
+
+// Vampire.findOneAndUpdate(
+// 	{name: 'Eve'},
+// 	{gender: 'm'},
+// 	{new: true},
+// 	(err, vampire) => {
+// 		console.log(vampire);
+// });
+
+// Vampire.findOneAndUpdate(
+// 	{name: 'Guy Man'},
+// 	{hates: ['clothes', 'jobs']},
+// 	{new: true},
+// 	(err, vampire) => {
+// 		console.log(vampire);
+// });
+
+// Vampire.findOneAndUpdate(
+// 	{name: 'Guy Man'},
+// 	{hates: ['clothes', 'jobs', 'alarm clocks', 'jackalopes']},
+// 	{new: true},
+// 	(err, vampire) => {
+// 		console.log(vampire);
+// });
+
+// Vampire.findOneAndUpdate(
+// 	{name: 'Eve'},
+// 	{$rename: {'name': 'moniker'}},
+// 	{new: true},
+// 	(err, vampire) => {
+// 		console.log(vampire);
+// 	});
+
+// Vampire.update(
+// 	{gender: 'f'},
+// 	{gender: 'fems'},
+// 	{multi: true},
+// 	(err, vampires) => {
+// 		console.log(vampires);
+// 	}
+// );
+
+
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // ## REMOVE
